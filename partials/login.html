@@ -1,0 +1,43 @@
+<html ng-app="employeeApp">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>User Login</title>
+
+</head>
+<link rel='stylesheet'
+	href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+
+<link rel="stylesheet" href="css/style.css" media="screen"
+	type="text/css" />
+<link
+	href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+	rel="stylesheet">
+	
+	<script src="js/angular.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-cookies.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+	
+	<div class="login-card">
+	<h1>Employee Log-in</h1>
+	<br>
+	<form role="form" ng-controller="LoginController">
+		<div id="empid">
+			<input type="text" id="empid" name="empid" placeholder="User Email"
+				ng-model="formData.empid"> <span class="help-block"></span>
+		</div>
+		<div id="password">
+			<input type="password" id="password" name="password"
+				placeholder="Password" ng-model="formData.password"> <span
+				class="help-block"></span>
+		</div>
+		<button type="submit" class="btn btn-primary btn-block"
+			ng-click="login()">Login</button>
+	</form>
+
+
+<html>
